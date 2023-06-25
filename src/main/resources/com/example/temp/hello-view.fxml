@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="238.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.temp.HelloController">
+   <children>
+       <Button fx:id="magister" layoutX="14.0" layoutY="154.0" onAction="#switchToNextScene1" text="Łatwy" />
+      <Button fx:id="doktor" layoutX="143.0" layoutY="154.0" mnemonicParsing="false" onAction="#switchToNextScene2" text="Średni" />
+      <Button fx:id="profesor" layoutX="272.0" layoutY="154.0" mnemonicParsing="false" onAction="#switchToNextScene3" text="Trudny" />
+      <Button fx:id="wlasna" layoutX="141.0" layoutY="198.0" mnemonicParsing="false" onAction="#switchToNextScene4" text="Własny" />
+      <ImageView fitHeight="150.0" fitWidth="375.0" layoutX="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/graffiti.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

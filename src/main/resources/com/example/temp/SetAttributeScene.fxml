@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.temp.ControllerOfSetAttribute">
+   <children>
+      <BorderPane layoutX="-1.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox prefHeight="175.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Wpisz wysokość (10 - 20)">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" left="3.0" top="2.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="height">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="10.0" layoutY="10.0" text="Wpisz szerokość (10 - 30)">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" left="3.0" top="2.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="width" layoutX="10.0" layoutY="27.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="13.0" layoutY="66.0" text="Ilość bomb (min. 1)">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" left="3.0" top="2.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="bomb" layoutX="10.0" layoutY="88.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+         </top>
+         <bottom>
+            <VBox alignment="CENTER" prefHeight="77.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="warning" alignment="TOP_CENTER" prefHeight="20.0" prefWidth="250.0" textFill="#fc0000">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="okButton" alignment="BASELINE_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#displayNewScene" prefHeight="37.0" prefWidth="101.0" text="OK" />
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
